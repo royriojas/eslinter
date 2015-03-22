@@ -60,6 +60,8 @@
     "glob",
     "file glob",
     "jsx lint",
-    "jsx eslint"
+    "jsx eslint",
+    "code validation",
+    "validate code"
   ]
 }
