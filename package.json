@@ -1,0 +1,65 @@
+{
+  "name": "eslinter",
+  "version": "1.0.0",
+  "description": "Simple wrapper around eslint with support for globs and cache, so files that not changed can be skipped, if previous run passed",
+  "main": "index.js",
+  "scripts": {
+    "beautify": "esbeautifier index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
+    "beautify-check": "esbeautifier -k index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
+    "eslint": "./bin/cli.js index.js 'src/**/*.js' 'lib/**/*.js' 'bin/**/*.js' 'specs/**/*.js'",
+    "test": "mocha-runner 'specs/**/*.js'",
+    "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
+    "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' -p 'src/**/*.js' npm run cover",
+    "lint": "npm run beautify && npm run eslint && npm test",
+    "check": "npm run beautify-check && npm run eslint && npm test",
+    "changelog": "changelogx -f markdown -o ./changelog.md",
+    "install-hooks": "prepush install && changelogx install-hook"
+  },
+  "bin": {
+    "eslinter": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/royriojas/eslinter"
+  },
+  "license": "MIT",
+  "author": "Roy Riojas (http://royriojas.com)",
+  "prepush": [
+    "npm run check"
+  ],
+  "devDependencies": {
+    "changelogx": "^1.0.10",
+    "esbeautifier": "^2.0.3",
+    "istanbul": "^0.3.8",
+    "mocha-runner": "^1.0.8",
+    "prepush": "^2.0.3",
+    "proxyquire": "^1.4.0",
+    "watch-spawn": "^1.0.3"
+  },
+  "dependencies": {
+    "clix": "^1.0.5",
+    "dispatchy": "^1.0.2",
+    "eslint": "^0.17.1",
+    "eslint-friendly-formatter": "^1.0.5",
+    "file-entry-cache": "^1.0.1",
+    "glob-expand": "^0.1.0",
+    "lodash.merge": "^3.0.3",
+    "optionator": "^0.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/royriojas/eslinter/issues"
+  },
+  "homepage": "https://github.com/royriojas/eslinter",
+  "keywords": [
+    "lint",
+    "eslint",
+    "javascript",
+    "code",
+    "check",
+    "jshint alternative",
+    "glob",
+    "file glob",
+    "jsx lint",
+    "jsx eslint"
+  ]
+}
