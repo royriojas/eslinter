@@ -30,6 +30,7 @@
   "devDependencies": {
     "changelogx": "^1.0.10",
     "esbeautifier": "^2.0.3",
+    "eslint": "^0.21.1",
     "istanbul": "^0.3.8",
     "mocha-runner": "^1.0.8",
     "prepush": "^2.0.3",
