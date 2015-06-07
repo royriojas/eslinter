@@ -58,10 +58,18 @@ module.exports = {
 
     eslinter.off( '.cli' );
 
-    if ( response.errorCount > 0 ) {
+    var errosCount = response.errorCount > 0;
+    if ( errosCount || response.warningCount > 0 ) {
       nodeProcess.stdout.write( response.output );
-      cli.error( 'Eslint validation failed. Total errors:', response.errorCount );
-      nodeProcess.exit( 1 );
+
+      if ( errosCount ) {
+        cli.error( 'Eslint validation failed. Total errors:', response.errorCount );
+      }
+      if ( response.warningCount > 0 ) {
+        cli.log( 'Eslint warnings found. Total warnings', response.warningCount );
+      }
+
+      nodeProcess.exit( errosCount ? 1 : 0 );
     } else {
       cli.ok( 'Eslint validation complete. No errors found' );
     }

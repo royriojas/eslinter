@@ -82,6 +82,7 @@ module.exports = merge( dispatcher.create(), {
 
     return {
       output: output,
+      warningCount: report.warningCount,
       errorCount: report.errorCount
     };
   }
