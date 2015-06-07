@@ -28,7 +28,7 @@
     "npm run check"
   ],
   "devDependencies": {
-    "changelogx": "^1.0.11",
+    "changelogx": "^1.0.12",
     "esbeautifier": "^2.0.3",
     "istanbul": "^0.3.8",
     "mocha-runner": "^1.0.8",
