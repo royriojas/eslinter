@@ -1,6 +1,6 @@
 {
   "name": "eslinter",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Simple wrapper around eslint with support for globs and cache, so files that not changed can be skipped, if previous run passed",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,8 @@
     "lint": "npm run beautify && npm run eslint && npm test",
     "check": "npm run beautify-check && npm run eslint && npm test",
     "changelog": "changelogx -f markdown -o ./changelog.md",
-    "install-hooks": "prepush install && changelogx install-hook"
+    "install-hooks": "prepush install && changelogx install-hook",
+    "bump": "bumpery --versionType=patch && npm run changelog && git add changelog.md && git commit -m 'DOC: Generate changelog'"
   },
   "bin": {
     "eslinter": "./bin/cli.js"
@@ -28,12 +29,13 @@
     "npm run check"
   ],
   "devDependencies": {
-    "changelogx": "^1.0.12",
-    "esbeautifier": "^2.0.3",
-    "istanbul": "^0.3.8",
+    "bumpery": "^1.0.7",
+    "changelogx": "^1.0.13",
+    "esbeautifier": "^2.0.5",
+    "istanbul": "^0.3.15",
     "mocha-runner": "^1.0.8",
     "prepush": "^2.0.4",
-    "proxyquire": "^1.4.0",
+    "proxyquire": "^1.5.0",
     "watch-spawn": "^1.0.3"
   },
   "dependencies": {
