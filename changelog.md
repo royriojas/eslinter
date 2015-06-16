@@ -1,5 +1,14 @@
 
 # eslinter - Changelog
+## v2.0.0
+- **Features**
+  - Add `eslint-plugin-react` and enable es6 flags - [4a353cb]( https://github.com/royriojas/eslinter/commit/4a353cb ), [royriojas](https://github.com/royriojas), 16/06/2015 02:07:52
+
+    
+- **Build Scripts Changes**
+  - update changelogx dep - [82a27a2]( https://github.com/royriojas/eslinter/commit/82a27a2 ), [royriojas](https://github.com/royriojas), 07/06/2015 01:20:44
+
+    
 ## v1.0.3
 - **Bug Fixes**
   - Warnings are only being shown when there are also errors. Fix [#1](https://github.com/royriojas/eslinter/issues/1) - [f837773]( https://github.com/royriojas/eslinter/commit/f837773 ), [royriojas](https://github.com/royriojas), 07/06/2015 01:18:21
