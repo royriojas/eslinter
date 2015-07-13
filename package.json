@@ -13,6 +13,7 @@
     "lint": "npm run beautify && npm run eslint && npm test",
     "check": "npm run beautify-check && npm run eslint && npm test",
     "changelog": "changelogx -f markdown -o ./changelog.md",
+    "do-changelog": "npm run changelog && git add ./changelog.md && git commit -m 'DOC: Generate changelog'",
     "install-hooks": "prepush install && changelogx install-hook",
     "bump": "bumpery --versionType=patch && npm run changelog && git add changelog.md && git commit -m 'DOC: Generate changelog'"
   },
