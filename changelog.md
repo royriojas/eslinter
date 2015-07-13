@@ -1,5 +1,20 @@
 
 # eslinter - Changelog
+## v2.0.3
+- **Build Scripts Changes**
+  - Automate generation of changelog and commit message for it - [8041291]( https://github.com/royriojas/eslinter/commit/8041291 ), [royriojas](https://github.com/royriojas), 12/07/2015 19:43:14
+
+    
+## v2.0.2
+- **Build Scripts Changes**
+  - Update module deps to remove colored output - [9e202e0]( https://github.com/royriojas/eslinter/commit/9e202e0 ), [royriojas](https://github.com/royriojas), 12/07/2015 19:37:54
+
+    If colored output is required export the following variable
+    
+    ```bash
+    export __CLIX_COLORED_OUTPUT__=true
+    ```
+    
 ## v2.0.0
 - **Features**
   - Add `eslint-plugin-react` and enable es6 flags - [4a353cb]( https://github.com/royriojas/eslinter/commit/4a353cb ), [royriojas](https://github.com/royriojas), 16/06/2015 02:07:52
