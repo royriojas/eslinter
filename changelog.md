@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v2.0.4
+- **Refactoring**
+  - Normalize info about this module options - [e929182]( https://github.com/royriojas/eslinter/commit/e929182 ), [royriojas](https://github.com/royriojas), 12/07/2015 20:35:26
+
+    
 ## v2.0.3
 - **Build Scripts Changes**
   - Automate generation of changelog and commit message for it - [8041291]( https://github.com/royriojas/eslinter/commit/8041291 ), [royriojas](https://github.com/royriojas), 12/07/2015 19:43:14
