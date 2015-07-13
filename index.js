@@ -1,8 +1,8 @@
 var dispatcher = require( 'dispatchy' );
-var merge = require( 'lodash.merge' );
+var merge = require( 'extend' );
 
 function getErrorResults( results ) {
-  var filtered = [];
+  var filtered = [ ];
 
   results.forEach( function ( result ) {
     var filteredMessages = result.messages.filter( function ( message ) {
@@ -24,13 +24,13 @@ module.exports = merge( dispatcher.create(), {
   lint: function ( filesSrc, opts ) {
 
     var me = this;
-    opts = opts || {};
+    opts = opts || { };
 
     var files;
     var cfg = opts.cfg;
     var useCache = !!opts.useCache;
 
-    filesSrc = filesSrc || [];
+    filesSrc = filesSrc || [ ];
 
     var cache = require( 'file-entry-cache' ).create( '__eslinter__' );
 
@@ -41,16 +41,10 @@ module.exports = merge( dispatcher.create(), {
       files = cache.getUpdatedFiles( filesSrc );
     }
 
-    me.fire( 'eslinter:start', {
-      filesSrc: filesSrc,
-      files: files
-    } );
+    me.fire( 'eslinter:start', { filesSrc: filesSrc, files: files } );
 
     if ( files.length === 0 ) {
-      return {
-        output: '',
-        errorCount: 0
-      };
+      return { output: '', errorCount: 0 };
     }
 
     var eslint = require( 'eslint' );
@@ -58,7 +52,7 @@ module.exports = merge( dispatcher.create(), {
 
     var report = engine.executeOnFiles( files );
 
-    var results = report.results || [];
+    var results = report.results || [ ];
 
     results.forEach( function ( result ) {
       if ( result.errorCount > 0 || result.warningCount > 0 ) {

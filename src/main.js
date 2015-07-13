@@ -27,9 +27,7 @@ module.exports = {
       return;
     }
 
-    var cfg = {
-      configFile: cli.pathToConfig
-    };
+    var cfg = { configFile: cli.pathToConfig };
 
     var eslinter = require( '../index' );
     var useCache = !!opts.useCache;
