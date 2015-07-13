@@ -39,7 +39,8 @@ module.exports = {
       }
     } );
 
-    cli.subtle( 'cache:', useCache, 'format:', opts.format );
+    cli.subtle( 'config:', cfg.configFile );
+    cli.subtle( 'cache:', useCache + ', format:', opts.format );
 
     var format;
     try {
