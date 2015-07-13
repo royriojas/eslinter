@@ -35,7 +35,7 @@ module.exports = {
     eslinter.on( 'eslinter:start.cli', function ( e, _args ) {
       cli.subtle( 'Total files: ' + _args.filesSrc.length + ', files to process: ' + _args.files.length );
       if ( _args.files.length === 0 ) {
-        cli.subtle( 'No files has changed since last run' );
+        cli.subtle( 'No files have changed since last run' );
       }
     } );
 

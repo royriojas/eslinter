@@ -23,9 +23,10 @@ module.exports = {
         description: 'the formatter to use to format the output of the tool. If none specified this will use `eslint-friendly-formatter`'
       },
       {
-        option: 'useCache',
+        option: 'use-cache',
         alias: 'u',
         type: 'Boolean',
+        default: 'true',
         description: 'If true, this module will remember the `mtime` and `size` of the linted files that passed validation and only operate on the ones that changed. If false, the cache will be destroyed. Cache will only be kept between executions with the useCache flag set to true.'
       }
     ]
