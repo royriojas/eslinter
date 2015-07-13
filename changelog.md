@@ -1,5 +1,13 @@
 
 # eslinter - Changelog
+## v2.0.5
+- **Enhancements**
+  - Cache is now enabled by default. - [1db5cef]( https://github.com/royriojas/eslinter/commit/1db5cef ), [royriojas](https://github.com/royriojas), 12/07/2015 21:27:01
+
+    To disable it. Pass the flag `--no-use-cache` or `--use-cache=false`
+    
+    This will destroy the cache. A new one will be created the next execution without those flags
+    
 ## v2.0.4
 - **Refactoring**
   - Normalize info about this module options - [e929182]( https://github.com/royriojas/eslinter/commit/e929182 ), [royriojas](https://github.com/royriojas), 12/07/2015 20:35:26
