@@ -92,6 +92,7 @@
     "FileError": true,
     "Modernizr": true,
     "requireArr": true,
+    "mockquire": true,
     "iit": true
   }
 }
