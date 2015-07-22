@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v2.0.6
+- **Enhancements**
+  - Add token to ignore global `mockquire` function injected by browsyquire - [5980ea1]( https://github.com/royriojas/eslinter/commit/5980ea1 ), [royriojas](https://github.com/royriojas), 21/07/2015 19:41:25
+
+    
 ## v2.0.5
 - **Enhancements**
   - Cache is now enabled by default. - [1db5cef]( https://github.com/royriojas/eslinter/commit/1db5cef ), [royriojas](https://github.com/royriojas), 12/07/2015 21:27:01
