@@ -1,5 +1,24 @@
 
 # eslinter - Changelog
+## v2.1.0
+- **Build Scripts Changes**
+  - Remove `bumpery` in favor of npm scripts - [2aad65f]( https://github.com/royriojas/eslinter/commit/2aad65f ), [royriojas](https://github.com/royriojas), 28/07/2015 13:51:30
+
+    added `bump-major` `bump-minor` and `bump-patch` scripts.
+    
+    Run then like
+    
+    ```bash
+    npm run bump-patch
+    ```
+    
+  - Update deps - [56eef83]( https://github.com/royriojas/eslinter/commit/56eef83 ), [royriojas](https://github.com/royriojas), 28/07/2015 13:50:25
+
+    
+- **Enhancements**
+  - Enable by default `eqeqeq` as error - [671be63]( https://github.com/royriojas/eslinter/commit/671be63 ), [royriojas](https://github.com/royriojas), 28/07/2015 13:38:08
+
+    
 ## v2.0.6
 - **Enhancements**
   - Add token to ignore global `mockquire` function injected by browsyquire - [5980ea1]( https://github.com/royriojas/eslinter/commit/5980ea1 ), [royriojas](https://github.com/royriojas), 21/07/2015 19:41:25
