@@ -28,9 +28,21 @@ module.exports = {
     }
 
     var cfg = { configFile: cli.pathToConfig };
-
-    var eslinter = require( '../index' );
     var useCache = !!opts.useCache;
+
+    var format;
+    try {
+      format = require( opts.format );
+    } catch (ex) {
+      format = opts.format;
+    }
+
+    var eslinter = require( '../index' ).create( {
+      useCache: useCache,
+      format: format,
+      cfg: cfg,
+      cacheId: opts.cacheId
+    } );
 
     eslinter.on( 'eslinter:start.cli', function ( e, _args ) {
       cli.subtle( 'Total files: ' + _args.filesSrc.length + ', files to process: ' + _args.files.length );
@@ -42,18 +54,7 @@ module.exports = {
     cli.subtle( 'config:', cfg.configFile );
     cli.subtle( 'cache:', useCache + ', format:', opts.format );
 
-    var format;
-    try {
-      format = require( opts.format );
-    } catch (ex) {
-      format = opts.format;
-    }
-
-    var response = eslinter.lint( files, {
-      useCache: useCache,
-      format: format,
-      cfg: cfg
-    } );
+    var response = eslinter.lint( files );
 
     eslinter.off( '.cli' );
 

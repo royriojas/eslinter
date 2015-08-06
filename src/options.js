@@ -16,6 +16,12 @@ module.exports = {
         heading: 'Options'
       },
       {
+        option: 'cache-id',
+        alias: 'i',
+        type: 'String',
+        description: 'An identifier for the cache file to create. This is only needed if you want to run this task in parallel otherwise the next execution might get confusing results for reusing the same cache file.'
+      },
+      {
         option: 'format',
         alias: 'f',
         type: 'String',

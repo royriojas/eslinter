@@ -1,5 +1,6 @@
 var dispatcher = require( 'dispatchy' );
-var merge = require( 'extend' );
+var extend = require( 'extend' );
+var trim = require( 'jq-trim' );
 
 function getErrorResults( results ) {
   var filtered = [ ];
@@ -20,11 +21,15 @@ function getErrorResults( results ) {
   return filtered;
 }
 
-module.exports = merge( dispatcher.create(), {
-  lint: function ( filesSrc, opts ) {
+var linter = extend( dispatcher.create(), {
+  _init: function ( opts ) {
+    var me = this;
+    me.opts = opts;
+  },
+  lint: function ( filesSrc ) {
 
     var me = this;
-    opts = opts || { };
+    var opts = me.opts || { };
 
     var files;
     var cfg = opts.cfg;
@@ -32,7 +37,7 @@ module.exports = merge( dispatcher.create(), {
 
     filesSrc = filesSrc || [ ];
 
-    var cache = require( 'file-entry-cache' ).create( '__eslinter__' );
+    var cache = require( 'file-entry-cache' ).create( '__eslinter__' + trim( opts.cacheId ) );
 
     if ( !useCache ) {
       cache.deleteCacheFile();
@@ -81,3 +86,12 @@ module.exports = merge( dispatcher.create(), {
     };
   }
 } );
+
+module.exports = {
+  create: function ( opts ) {
+    var ins = Object.create( linter );
+    ins._init( opts );
+
+    return ins;
+  }
+};
