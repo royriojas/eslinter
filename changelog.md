@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v2.2.0
+- **Features**
+  - Add cacheId option to specify an identifier for the cache file to use - [8651032]( https://github.com/royriojas/eslinter/commit/8651032 ), [royriojas](https://github.com/royriojas), 05/08/2015 19:47:22
+
+    
 ## v2.1.0
 - **Build Scripts Changes**
   - Remove `bumpery` in favor of npm scripts - [2aad65f]( https://github.com/royriojas/eslinter/commit/2aad65f ), [royriojas](https://github.com/royriojas), 28/07/2015 13:51:30
