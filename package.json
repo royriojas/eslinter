@@ -38,7 +38,7 @@
   ],
   "devDependencies": {
     "changelogx": "^1.0.16",
-    "esbeautifier": "^4.2.0",
+    "esbeautifier": "^4.2.5",
     "istanbul": "^0.3.17",
     "mocha-runner": "^1.0.8",
     "precommit": "^1.1.0",
@@ -47,7 +47,7 @@
     "watch-spawn": "^1.0.3"
   },
   "dependencies": {
-    "clix": "^1.1.5",
+    "clix": "^1.1.6",
     "dispatchy": "^1.0.3",
     "eslint": "^0.23.0",
     "eslint-friendly-formatter": "^1.1.0",
