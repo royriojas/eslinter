@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v2.3.0
+- **Build Scripts Changes**
+  - update clix dep to get nicer log output - [7c8ddbb]( https://github.com/royriojas/eslinter/commit/7c8ddbb ), [royriojas](https://github.com/royriojas), 09/08/2015 18:25:23
+
+    
 ## v2.2.0
 - **Features**
   - Add cacheId option to specify an identifier for the cache file to use - [8651032]( https://github.com/royriojas/eslinter/commit/8651032 ), [royriojas](https://github.com/royriojas), 05/08/2015 19:47:22
