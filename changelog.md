@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v2.3.1
+- **Build Scripts Changes**
+  - Update to latest clix - [21414ec]( https://github.com/royriojas/eslinter/commit/21414ec ), [royriojas](https://github.com/royriojas), 11/08/2015 14:43:32
+
+    
 ## v2.3.0
 - **Build Scripts Changes**
   - update clix dep to get nicer log output - [7c8ddbb]( https://github.com/royriojas/eslinter/commit/7c8ddbb ), [royriojas](https://github.com/royriojas), 09/08/2015 18:25:23
