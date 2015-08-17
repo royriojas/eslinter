@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v2.3.3
+- **Bug Fixes**
+  - properly expand globs that contains globs with exclude patterns - [23cdd38]( https://github.com/royriojas/eslinter/commit/23cdd38 ), [royriojas](https://github.com/royriojas), 16/08/2015 21:20:37
+
+    
 ## v2.3.2
 - **Build Scripts Changes**
   - update clix dep to get nicer log output - [85f2a4c]( https://github.com/royriojas/eslinter/commit/85f2a4c ), [royriojas](https://github.com/royriojas), 11/08/2015 17:40:47
