@@ -47,7 +47,7 @@
     "watch-spawn": "^1.0.3"
   },
   "dependencies": {
-    "clix": "^2.0.3",
+    "clix": "^2.0.12",
     "dispatchy": "^1.0.3",
     "eslint": "^0.23.0",
     "eslint-friendly-formatter": "^1.1.0",

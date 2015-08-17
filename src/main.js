@@ -7,19 +7,17 @@ module.exports = {
   run: function ( cli ) {
 
     // region requires
-    var expand = require( 'glob-expand' );
+    //var expand = require( 'glob-expand' );
 
     var path = require( 'path' );
-    var process = require( './../lib/process' );
+    //var process = require( './../lib/process' );
     // endregion
 
     var opts = cli.opts;
 
-    var files = opts._.map( function ( glob ) {
-      return path.resolve( process.cwd(), glob );
+    var files = cli.expandGlobs( cli.opts._ ).map( function ( file ) {
+      return path.resolve( file );
     } );
-
-    files = expand.apply( null, files );
 
     if ( files.length === 0 ) {
       //console.log( chalk.green( '>> no files to beautify' ) );
