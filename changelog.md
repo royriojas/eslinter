@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v3.0.1
+- **Enhancements**
+  - update the eslint config - [317420a]( https://github.com/royriojas/eslinter/commit/317420a ), [royriojas](https://github.com/royriojas), 21/09/2015 14:41:17
+
+    
 ## v3.0.0
 - **Enhancements**
   - use the latest eslint module - [6cf8672]( https://github.com/royriojas/eslinter/commit/6cf8672 ), [royriojas](https://github.com/royriojas), 21/09/2015 10:21:40
