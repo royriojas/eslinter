@@ -42,7 +42,8 @@ var linter = extend( dispatcher.create(), {
 
     var eslint = require( 'eslint' );
     var engine = new eslint.CLIEngine( extend( cfg, {
-      cache: opts.useCache, cacheFile: path.resolve( path.join( __dirname, './.cache' ) + '/.eslintcache' )
+      cache: opts.useCache,
+      cacheFile: path.resolve( path.join( __dirname, './.cache' ) + '/.eslintcache' )
     } ) );
 
     var report = engine.executeOnFiles( files );
