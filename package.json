@@ -1,6 +1,6 @@
 {
   "name": "eslinter",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Simple wrapper around eslint with support for globs and cache, so files that not changed can be skipped, if previous run passed",
   "main": "index.js",
   "scripts": {
