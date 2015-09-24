@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v3.0.2
+- **Features**
+  - Add the fix option from eslint - [ddf277b]( https://github.com/royriojas/eslinter/commit/ddf277b ), [royriojas](https://github.com/royriojas), 24/09/2015 15:11:49
+
+    
 ## v3.0.1
 - **Enhancements**
   - update the eslint config - [317420a]( https://github.com/royriojas/eslinter/commit/317420a ), [royriojas](https://github.com/royriojas), 21/09/2015 14:41:17
