@@ -25,7 +25,7 @@ module.exports = {
       return;
     }
 
-    var cfg = { configFile: cli.pathToConfig };
+    var cfg = { configFile: cli.pathToConfig, fix: opts.fix };
     var useCache = !!opts.useCache;
 
     var format;

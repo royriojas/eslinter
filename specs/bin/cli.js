@@ -28,9 +28,7 @@ describe( 'bin/esbeautifier', function () {
       }
     } );
 
-    expect( me.mainMock.run.args[ 0 ][ 0 ].opts._ ).to.deep.equal( [
-      'src/**/*.js'
-    ] );
+    expect( me.mainMock.run.args[ 0 ][ 0 ].opts._ ).to.deep.equal( [ 'src/**/*.js' ] );
 
     expect( me.mainMock.run ).to.have.been.called;
   } );

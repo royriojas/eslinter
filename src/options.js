@@ -22,6 +22,13 @@ module.exports = {
         description: 'An identifier for the cache file to create. This is only needed if you want to run this task in parallel otherwise the next execution might get confusing results for reusing the same cache file.'
       },
       {
+        option: 'fix',
+        alias: 'x',
+        type: 'Boolean',
+        default: 'false',
+        description: 'If true, eslint will try to fix the issues that are fixable, sometimes multiple pass will be required'
+      },
+      {
         option: 'format',
         alias: 'f',
         type: 'String',

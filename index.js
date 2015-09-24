@@ -11,10 +11,7 @@ function getErrorResults( results ) {
     } );
 
     if ( filteredMessages.length > 0 ) {
-      filtered.push( {
-        filePath: result.filePath,
-        messages: filteredMessages
-      } );
+      filtered.push( { filePath: result.filePath, messages: filteredMessages } );
     }
   } );
 
@@ -58,6 +55,10 @@ var linter = extend( dispatcher.create(), {
 
     if ( !formatter ) {
       throw new Error( 'Could not find formatter: ' + opts.format );
+    }
+
+    if ( cfg.fix ) {
+      eslint.CLIEngine.outputFixes( report );
     }
 
     var output = formatter( results );
