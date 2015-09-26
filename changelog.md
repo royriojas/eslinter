@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v3.1.0
+- **Enhancements**
+  - update eslinter to get latest eslint-plugin-react - [95f1350]( https://github.com/royriojas/eslinter/commit/95f1350 ), [royriojas](https://github.com/royriojas), 26/09/2015 01:39:17
+
+    
 ## v3.0.2
 - **Features**
   - Add the fix option from eslint - [ddf277b]( https://github.com/royriojas/eslinter/commit/ddf277b ), [royriojas](https://github.com/royriojas), 24/09/2015 15:11:49
