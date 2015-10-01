@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v3.2.0
+- **Enhancements**
+  - use babel-eslint to parse all ES6 syntax - [7b147c0]( https://github.com/royriojas/eslinter/commit/7b147c0 ), [royriojas](https://github.com/royriojas), 01/10/2015 11:09:49
+
+    
 ## v3.1.0
 - **Enhancements**
   - update eslinter to get latest eslint-plugin-react - [95f1350]( https://github.com/royriojas/eslinter/commit/95f1350 ), [royriojas](https://github.com/royriojas), 26/09/2015 01:39:17
