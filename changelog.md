@@ -1,5 +1,10 @@
 
 # eslinter - Changelog
+## v3.2.1
+- **Build Scripts Changes**
+  - update eslint to latest version - [131588c]( https://github.com/royriojas/eslinter/commit/131588c ), [royriojas](https://github.com/royriojas), 06/10/2015 20:44:57
+
+    
 ## v3.2.0
 - **Enhancements**
   - use babel-eslint to parse all ES6 syntax - [7b147c0]( https://github.com/royriojas/eslinter/commit/7b147c0 ), [royriojas](https://github.com/royriojas), 01/10/2015 11:09:49
