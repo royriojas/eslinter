@@ -47,10 +47,10 @@
     "watch-spawn": "^1.0.3"
   },
   "dependencies": {
-    "babel-eslint": "^4.1.3",
+    "babel-eslint": "^5.0.0",
     "clix": "^2.0.12",
     "dispatchy": "^1.0.3",
-    "eslint": "^1.6.0",
+    "eslint": "^2.1.0",
     "eslint-friendly-formatter": "^1.2.2",
     "eslint-plugin-react": "^3.4.2",
     "extend": "^3.0.0",
